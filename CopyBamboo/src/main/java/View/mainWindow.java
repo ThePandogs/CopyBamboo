@@ -203,7 +203,7 @@ public class mainWindow extends javax.swing.JFrame {
         panelRedondeado2.add(txtOriginDirectory, gridBagConstraints);
 
         lblOriginDirectory.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
-        lblOriginDirectory.setText("Origing Directory");
+        lblOriginDirectory.setText("Source Directory");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
