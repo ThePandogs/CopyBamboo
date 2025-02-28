@@ -24,25 +24,23 @@ This project was born out of a personal need. I had an iPhone full of photos tha
   - Generate a folder for unclassified files
   - Overwrite existing files
 
+<p align="center">
+  <img src="screenshots/CopyBamboo.png" alt="Dashboard" width="50%">
+</p>
+
 ## Requirements
 
 - Java JDK 8 or higher
 - Apache Maven
 
-### Installation
+### Contact
+If you have any questions or suggestions, feel free to reach out:
 
-1. Clone the repository:
+Name: Carlos Fraile
 
-```bash
-git clone https://github.com/ThePandogs/CopyBamboo
-```
+Email: carlosfrailedev@gmail.com
 
-2. Compile the project and enjoy:
- ```bash
-cd CopyBamboo
+GitHub: ThePandogs
 
-#Linux
- .\buildWindows.sh
-#Windows
- .\buildWindows.bat
-```
+Linkedin: www.linkedin.com/in/carlosfrailedev
+
