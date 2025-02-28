@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="radioGroupOrganize">
+    </Component>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="JMenuFile">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="33" red="ff" type="rgb"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="File"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuExit">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Exit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuExitActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="JMenuHelp">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Help"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuDoc">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Documentation"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuDocActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuProfile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ThePandogs"/>
+                <Property name="toolTipText" type="java.lang.String" value="My github profile"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuProfileActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="CopyBamboo"/>
+    <Property name="iconImage" type="java.awt.Image" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection code="new ImageIcon(getClass().getResource(&quot;/img/bambu.png&quot;)).getImage()" type="code"/>
+    </Property>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[800, 800]"/>
+    </Property>
+    <Property name="name" type="java.lang.String" value="CopyBamboo" noResource="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,55,0,0,3,-114"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+    <Property name="columns" type="int" value="0"/>
+    <Property name="rows" type="int" value="1"/>
+  </Layout>
+  <SubComponents>
+    <Container class="Components.Background" name="background">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="66" type="rgb"/>
+        </Property>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[700, 500]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[700, 500]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[700, 500]"/>
+        </Property>
+        <Property name="round" type="int" value="40"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="0"/>
+        <Property name="horizontalGap" type="int" value="15"/>
+        <Property name="rows" type="int" value="1"/>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JSplitPane" name="jSplitPane2">
+          <Properties>
+            <Property name="dividerLocation" type="int" value="500"/>
+            <Property name="dividerSize" type="int" value="10"/>
+            <Property name="orientation" type="int" value="0"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Default Cursor"/>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+          <SubComponents>
+            <Container class="Components.RoundedPanel" name="Log">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Log">
+                      <Font PropertyName="font" name="Bahnschrift" size="18" style="1"/>
+                      <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[0, 0]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                  <JSplitPaneConstraints position="bottom"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                <Property name="columns" type="int" value="0"/>
+                <Property name="rows" type="int" value="1"/>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="66" green="66" red="66" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="jtextLog">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Arial" size="14" style="1"/>
+                        </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="lineWrap" type="boolean" value="true"/>
+                        <Property name="selectedTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="33" type="rgb"/>
+                        </Property>
+                        <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="Form">
+              <Properties>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[0, 0]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[0, 0]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                  <JSplitPaneConstraints position="left"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+              <SubComponents>
+                <Container class="Components.RoundedPanel" name="panelRedondeado2">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder title="Directories">
+                          <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                            <EtchetBorder>
+                              <Color PropertyName="highlight" blue="0" green="99" red="0" type="rgb"/>
+                              <Color PropertyName="shadow" blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
+                            </EtchetBorder>
+                          </Border>
+                          <Font PropertyName="font" name="Bahnschrift" size="18" style="0"/>
+                        </TitledBorder>
+                      </Border>
+                    </Property>
+                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[720, 240]"/>
+                    </Property>
+                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[720, 240]"/>
+                    </Property>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[720, 240]"/>
+                    </Property>
+                  </Properties>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="txtOriginDirectory">
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                          <GridBagConstraints gridX="0" gridY="1" gridWidth="3" gridHeight="1" fill="0" ipadX="428" ipadY="0" insetsTop="4" insetsLeft="0" insetsBottom="15" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblOriginDirectory">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Bahnschrift" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Origing Directory"/>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                          <GridBagConstraints gridX="0" gridY="0" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="8" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtDestinationDirectory">
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                          <GridBagConstraints gridX="0" gridY="3" gridWidth="3" gridHeight="1" fill="0" ipadX="428" ipadY="0" insetsTop="4" insetsLeft="0" insetsBottom="15" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblDestinarionDirectory">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Bahnschrift" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Destination Directory"/>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                          <GridBagConstraints gridX="0" gridY="2" gridWidth="2" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="8" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btnOriginDirectory">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Bahnschrift" size="14" style="0"/>
+                        </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="99" red="0" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Choose Folder..."/>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[0, 0]"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnOriginDirectoryActionPerformed"/>
+                      </Events>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                          <GridBagConstraints gridX="3" gridY="1" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="4" insetsLeft="6" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btnDestinationDirectory">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Bahnschrift" size="14" style="0"/>
+                        </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="99" red="0" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Choose Folder..."/>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[0, 0]"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDestinationDirectoryActionPerformed"/>
+                      </Events>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                          <GridBagConstraints gridX="3" gridY="3" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="4" insetsLeft="6" insetsBottom="15" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton1">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Bahnschrift" size="14" style="0"/>
+                        </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="99" red="0" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Start"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Hand Cursor"/>
+                        </Property>
+                        <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                          <Insets value="[4, 20, 4, 20]"/>
+                        </Property>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[90, 29]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[90, 29]"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                      </Events>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                          <GridBagConstraints gridX="0" gridY="4" gridWidth="4" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="Components.RoundedPanel" name="pnlOptions">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder title="Options">
+                          <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                            <EtchetBorder>
+                              <Color PropertyName="highlight" blue="0" green="99" red="0" type="rgb"/>
+                              <Color PropertyName="shadow" blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
+                            </EtchetBorder>
+                          </Border>
+                          <Font PropertyName="font" name="Bahnschrift" size="18" style="0"/>
+                        </TitledBorder>
+                      </Border>
+                    </Property>
+                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[32767, 240]"/>
+                    </Property>
+                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[0, 0]"/>
+                    </Property>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[720, 240]"/>
+                    </Property>
+                  </Properties>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="pnlOrganize">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder title="Classified By">
+                              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                                <EtchetBorder>
+                                  <Color PropertyName="highlight" blue="0" green="99" red="0" type="rgb"/>
+                                  <Color PropertyName="shadow" blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
+                                </EtchetBorder>
+                              </Border>
+                              <Font PropertyName="font" name="Bahnschrift" size="14" style="0"/>
+                            </TitledBorder>
+                          </Border>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[450, 175]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[450, 175]"/>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                          <GridBagConstraints gridX="-1" gridY="-1" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="5" insetsLeft="5" insetsBottom="5" insetsRight="5" anchor="10" weightX="0.0" weightY="0.0"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+                      <SubComponents>
+                        <Container class="javax.swing.JPanel" name="pnlDate">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                <TitledBorder position="3" title="Date">
+                                  <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                                    <EmptyBorder/>
+                                  </Border>
+                                  <Font PropertyName="font" name="Bahnschrift" size="14" style="0"/>
+                                </TitledBorder>
+                              </Border>
+                            </Property>
+                            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[180, 140]"/>
+                            </Property>
+                            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[180, 140]"/>
+                            </Property>
+                            <Property name="opaque" type="boolean" value="false"/>
+                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[180, 140]"/>
+                            </Property>
+                          </Properties>
+                          <SubComponents>
+                            <Component class="javax.swing.JRadioButton" name="radioBtnCreationDate">
+                              <Properties>
+                                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                  <ComponentRef name="radioGroupOrganize"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Bahnschrift" size="13" style="0"/>
+                                </Property>
+                                <Property name="selected" type="boolean" value="true"/>
+                                <Property name="text" type="java.lang.String" value="Creation Date"/>
+                                <Property name="toolTipText" type="java.lang.String" value="Filter files by their actual creation date on disk." noResource="true"/>
+                              </Properties>
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                                  <GridBagConstraints gridX="0" gridY="0" gridWidth="1" gridHeight="1" fill="1" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="6" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                </Constraint>
+                              </Constraints>
+                            </Component>
+                            <Component class="javax.swing.JRadioButton" name="radioBtnLastModificationDate">
+                              <Properties>
+                                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                  <ComponentRef name="radioGroupOrganize"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Bahnschrift" size="13" style="0"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="Last Modification"/>
+                                <Property name="toolTipText" type="java.lang.String" value="Filter files by their last modified date."/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioBtnLastModificationDateActionPerformed"/>
+                              </Events>
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                                  <GridBagConstraints gridX="0" gridY="4" gridWidth="1" gridHeight="1" fill="1" ipadX="0" ipadY="0" insetsTop="2" insetsLeft="0" insetsBottom="6" insetsRight="0" anchor="17" weightX="0.0" weightY="0.0"/>
+                                </Constraint>
+                              </Constraints>
+                            </Component>
+                            <Component class="javax.swing.JRadioButton" name="radioBtnMetaDate">
+                              <Properties>
+                                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                  <ComponentRef name="radioGroupOrganize"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Bahnschrift" size="13" style="0"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="Creation Meta Date"/>
+                                <Property name="toolTipText" type="java.lang.String" value="Filter files by metadata creation date stored in the file properties."/>
+                              </Properties>
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                                  <GridBagConstraints gridX="0" gridY="2" gridWidth="1" gridHeight="1" fill="1" ipadX="0" ipadY="0" insetsTop="2" insetsLeft="0" insetsBottom="6" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                </Constraint>
+                              </Constraints>
+                            </Component>
+                          </SubComponents>
+                          <LayoutCode>
+                            <CodeStatement>
+                              <CodeExpression id="1_jPanel1Layout">
+                                <CodeVariable name="jPanel1Layout" type="4096" declaredType="java.awt.GridBagLayout"/>
+                                <ExpressionOrigin>
+                                  <ExpressionProvider type="CodeConstructor">
+                                    <CodeConstructor class="java.awt.GridBagLayout" parameterTypes=""/>
+                                  </ExpressionProvider>
+                                </ExpressionOrigin>
+                              </CodeExpression>
+                              <StatementProvider type="CodeExpression">
+                                <CodeExpression id="1_jPanel1Layout"/>
+                              </StatementProvider>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="1_jPanel1Layout"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="columnWidths" class="java.awt.GridBagLayout"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="2">
+                                  <ExpressionOrigin>
+                                    <Value type="[I" editor="org.netbeans.modules.form.layoutsupport.delegates.GridBagLayoutSupport$IntArrayPropertyEditor">
+                                      <PropertyValue value="[0]"/>
+                                    </Value>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="1_jPanel1Layout"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="rowHeights" class="java.awt.GridBagLayout"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="3">
+                                  <ExpressionOrigin>
+                                    <Value type="[I" editor="org.netbeans.modules.form.layoutsupport.delegates.GridBagLayoutSupport$IntArrayPropertyEditor">
+                                      <PropertyValue value="[0, 0, 0, 0, 0]"/>
+                                    </Value>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="4_pnlDate">
+                                <CodeVariable name="pnlDate" type="8194" declaredType="javax.swing.JPanel"/>
+                                <ExpressionOrigin>
+                                  <ExpressionProvider type="ComponentRef">
+                                    <ComponentRef name="pnlDate"/>
+                                  </ExpressionProvider>
+                                </ExpressionOrigin>
+                              </CodeExpression>
+                              <StatementProvider type="CodeMethod">
+                                <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="1_jPanel1Layout"/>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="5_gridBagConstraints">
+                                <CodeVariable name="gridBagConstraints" type="20480" declaredType="java.awt.GridBagConstraints"/>
+                                <ExpressionOrigin>
+                                  <ExpressionProvider type="CodeConstructor">
+                                    <CodeConstructor class="java.awt.GridBagConstraints" parameterTypes=""/>
+                                  </ExpressionProvider>
+                                </ExpressionOrigin>
+                              </CodeExpression>
+                              <StatementProvider type="CodeExpression">
+                                <CodeExpression id="5_gridBagConstraints"/>
+                              </StatementProvider>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="5_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="gridx" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="6">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="0"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="5_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="gridy" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="7">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="0"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="5_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="fill" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="8">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="1"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="5_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="anchor" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="9">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="18"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="5_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="insets" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="10">
+                                  <ExpressionOrigin>
+                                    <Value type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                      <Insets value="[0, 0, 6, 0]"/>
+                                    </Value>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="4_pnlDate"/>
+                              <StatementProvider type="CodeMethod">
+                                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="11_radioBtnCreationDate">
+                                  <CodeVariable name="radioBtnCreationDate" type="8194" declaredType="javax.swing.JRadioButton"/>
+                                  <ExpressionOrigin>
+                                    <ExpressionProvider type="ComponentRef">
+                                      <ComponentRef name="radioBtnCreationDate"/>
+                                    </ExpressionProvider>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                                <CodeExpression id="5_gridBagConstraints"/>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="12_gridBagConstraints">
+                                <CodeVariable name="gridBagConstraints"/>
+                                <ExpressionOrigin>
+                                  <ExpressionProvider type="CodeConstructor">
+                                    <CodeConstructor class="java.awt.GridBagConstraints" parameterTypes=""/>
+                                  </ExpressionProvider>
+                                </ExpressionOrigin>
+                              </CodeExpression>
+                              <StatementProvider type="CodeExpression">
+                                <CodeExpression id="12_gridBagConstraints"/>
+                              </StatementProvider>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="12_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="gridx" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="13">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="0"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="12_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="gridy" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="14">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="4"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="12_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="fill" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="15">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="1"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="12_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="anchor" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="16">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="17"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="12_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="insets" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="17">
+                                  <ExpressionOrigin>
+                                    <Value type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                      <Insets value="[2, 0, 6, 0]"/>
+                                    </Value>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="4_pnlDate"/>
+                              <StatementProvider type="CodeMethod">
+                                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="18_radioBtnLastModificationDate">
+                                  <CodeVariable name="radioBtnLastModificationDate" type="8194" declaredType="javax.swing.JRadioButton"/>
+                                  <ExpressionOrigin>
+                                    <ExpressionProvider type="ComponentRef">
+                                      <ComponentRef name="radioBtnLastModificationDate"/>
+                                    </ExpressionProvider>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                                <CodeExpression id="12_gridBagConstraints"/>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="19_gridBagConstraints">
+                                <CodeVariable name="gridBagConstraints"/>
+                                <ExpressionOrigin>
+                                  <ExpressionProvider type="CodeConstructor">
+                                    <CodeConstructor class="java.awt.GridBagConstraints" parameterTypes=""/>
+                                  </ExpressionProvider>
+                                </ExpressionOrigin>
+                              </CodeExpression>
+                              <StatementProvider type="CodeExpression">
+                                <CodeExpression id="19_gridBagConstraints"/>
+                              </StatementProvider>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="19_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="gridx" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="20">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="0"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="19_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="gridy" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="21">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="2"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="19_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="fill" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="22">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="1"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="19_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="anchor" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="23">
+                                  <ExpressionOrigin>
+                                    <Value type="int" value="18"/>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="19_gridBagConstraints"/>
+                              <StatementProvider type="CodeField">
+                                <CodeField name="insets" class="java.awt.GridBagConstraints"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="24">
+                                  <ExpressionOrigin>
+                                    <Value type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                      <Insets value="[2, 0, 6, 0]"/>
+                                    </Value>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                              </Parameters>
+                            </CodeStatement>
+                            <CodeStatement>
+                              <CodeExpression id="4_pnlDate"/>
+                              <StatementProvider type="CodeMethod">
+                                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+                              </StatementProvider>
+                              <Parameters>
+                                <CodeExpression id="25_radioBtnMetaDate">
+                                  <CodeVariable name="radioBtnMetaDate" type="8194" declaredType="javax.swing.JRadioButton"/>
+                                  <ExpressionOrigin>
+                                    <ExpressionProvider type="ComponentRef">
+                                      <ComponentRef name="radioBtnMetaDate"/>
+                                    </ExpressionProvider>
+                                  </ExpressionOrigin>
+                                </CodeExpression>
+                                <CodeExpression id="19_gridBagConstraints"/>
+                              </Parameters>
+                            </CodeStatement>
+                          </LayoutCode>
+                        </Container>
+                        <Container class="javax.swing.JPanel" name="pnlTypeFile">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                <TitledBorder position="3" title="TypeFile">
+                                  <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                                    <EmptyBorder/>
+                                  </Border>
+                                  <Font PropertyName="font" name="Bahnschrift" size="14" style="0"/>
+                                </TitledBorder>
+                              </Border>
+                            </Property>
+                            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[180, 140]"/>
+                            </Property>
+                            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[180, 140]"/>
+                            </Property>
+                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[180, 140]"/>
+                            </Property>
+                          </Properties>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JRadioButton" name="radioBtnExtension">
+                              <Properties>
+                                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                  <ComponentRef name="radioGroupOrganize"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Bahnschrift" size="13" style="0"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="Extension"/>
+                                <Property name="toolTipText" type="java.lang.String" value="Filter by file type (e.g., .jpg, .pdf)"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioBtnExtensionActionPerformed"/>
+                              </Events>
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                                  <GridBagConstraints gridX="0" gridY="0" gridWidth="1" gridHeight="1" fill="1" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="4" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                </Constraint>
+                              </Constraints>
+                            </Component>
+                            <Component class="javax.swing.JRadioButton" name="radioBtnType">
+                              <Properties>
+                                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                  <ComponentRef name="radioGroupOrganize"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Bahnschrift" size="13" style="0"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="Pictures,Videos,Documents..."/>
+                              </Properties>
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                                  <GridBagConstraints gridX="0" gridY="1" gridWidth="1" gridHeight="1" fill="1" ipadX="0" ipadY="0" insetsTop="2" insetsLeft="0" insetsBottom="4" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                </Constraint>
+                              </Constraints>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="jPanel2">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder title="Parameters">
+                              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                                <EtchetBorder>
+                                  <Color PropertyName="highlight" blue="0" green="99" red="0" type="rgb"/>
+                                  <Color PropertyName="shadow" blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
+                                </EtchetBorder>
+                              </Border>
+                              <Font PropertyName="font" name="Bahnschrift" size="14" style="0"/>
+                            </TitledBorder>
+                          </Border>
+                        </Property>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[210, 175]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[210, 175]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[210, 175]"/>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                          <GridBagConstraints gridX="-1" gridY="-1" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="5" insetsLeft="5" insetsBottom="5" insetsRight="5" anchor="10" weightX="0.0" weightY="0.0"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JCheckBox" name="chkrenameFileDate">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Bahnschrift" size="13" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Rename File with Date"/>
+                            <Property name="toolTipText" type="java.lang.String" value="Rename the file with the choosed date"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                              <GridBagConstraints gridX="1" gridY="0" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="6" insetsLeft="6" insetsBottom="6" insetsRight="6" anchor="18" weightX="0.0" weightY="0.0"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JCheckBox" name="chkFolderNotClasified">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Bahnschrift" size="13" style="0"/>
+                            </Property>
+                            <Property name="selected" type="boolean" value="true"/>
+                            <Property name="text" type="java.lang.String" value="Unclassified folder         "/>
+                            <Property name="toolTipText" type="java.lang.String" value="Create unclassified folder"/>
+                            <Property name="actionCommand" type="java.lang.String" value="Create unclassified folder"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                              <GridBagConstraints gridX="1" gridY="1" gridWidth="2" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="6" insetsLeft="6" insetsBottom="6" insetsRight="6" anchor="10" weightX="0.0" weightY="0.0"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JCheckBox" name="chkOverwriteFile">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Bahnschrift" size="13" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Overwrite File"/>
+                            <Property name="toolTipText" type="java.lang.String" value=""/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                              <GridBagConstraints gridX="1" gridY="2" gridWidth="2" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="6" insetsLeft="6" insetsBottom="6" insetsRight="6" anchor="18" weightX="0.0" weightY="0.0"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
