@@ -25,7 +25,7 @@ This project was born out of a personal need. I had an iPhone full of photos tha
   - Overwrite existing files
 
 <p align="center">
-  <img src="screenshots/CopyBamboo.png" alt="Dashboard" width="50%">
+  <img src="screenshots/CopyBamboo.png" alt="Dashboard" width="100%">
 </p>
 
 ## Requirements
