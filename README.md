@@ -5,6 +5,10 @@
 
 A Java application built with Maven that organizes files based on their creation date, metadata creation date, last modification date, and file type. It also provides options to rename files with the date, create a folder for unclassified files, and overwrite existing files.
 
+## The Story Behind This Project
+
+This project was born out of a personal need. I had an iPhone full of photos that I couldn't transfer to my PC because the device kept freezing during the process. As a workaround, I had to download the photos directly from iCloud, but this method caused me to lose the organized folder structure I had on my phone. Frustrated by this, I decided to create a tool that could automatically organize files by date and type. Over time, I added more functionality to make it even more useful.
+
 ## Features
 
 - **Classification by Date**:
