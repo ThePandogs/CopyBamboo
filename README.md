@@ -42,8 +42,3 @@ cd CopyBamboo
 #Windows
  .\buildWindows.bat
 ```
-
-![CopyBamboo](https://github.com/user-attachments/assets/348f71f2-112c-4c77-976f-92bdc61ae779)
-
-
-
